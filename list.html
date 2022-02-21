@@ -26,15 +26,25 @@
                 <ol id="grocery-list">
                     <li>
                         <label for="check-eggs">Eggs</label>
+                        <input id="check-eggs" type="checkbox" class="complete-item" onclick="completeListItem(this)">
+                        <button class="delete-item" onclick="deleteListItem(this.parentNode)">X</button>
                     </li>
-                    <li>Milk</li>
-                    <li>Cereal</li>
+                    <li>
+                        <label for="check-milk">Milk</label>
+                        <input id="check-milk" type="checkbox" class="complete-item" onclick="completeListItem(this)">
+                        <button class="delete-item" onclick="deleteListItem(this.parentNode)">X</button>
+                    </li>
+                    <li>
+                        <label for="check-cereal">Cereal</label>
+                        <input id="check-cereal" type="checkbox" class="complete-item" onclick="completeListItem(this)">
+                        <button class="delete-item" onclick="deleteListItem(this.parentNode)">X</button>
+                    </li>
                 </ol>
 
             </div>
-            <label for="text_input">Text Input:</label>
-            <input id="text_input" type="text"></input>
-            <button>Add Item</button>
+            <label for="text-input">Text Input:</label>
+            <input id="text-input" type="text"></input>
+            <button onclick="addListItem()">Add Item</button>
         </div>
     </div>
 </body>
